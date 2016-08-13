@@ -4,6 +4,15 @@
   "description": "Browser support tables for modern web technologies - plugin for vscode",
   "version": "0.0.1",
   "publisher": "agauniyal",
+  "bugs": {
+    "url": "https://github.com/agauniyal/vscode-caniuse/issues",
+    "email": "agauniyal@outlook.com"
+  },
+  "homepage": "https://github.com/agauniyal/vscode-caniuse/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agauniyal/vscode-caniuse.git"
+  },
   "engines": {
     "vscode": "^1.0.0"
   },
