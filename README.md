@@ -4,7 +4,7 @@
 
 > "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 
-![vscode-caniuse screenshot](screenshot.jpg)
+![vscode-caniuse screenshot](screenshot.png)
 
 ---------------
 ## Installation
