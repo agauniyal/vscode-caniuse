@@ -2,6 +2,14 @@
 
 Instant & Offline check for HTML5, CSS3, SVG, JS API compatibility through [Can I Use](http://caniuse.com/).
 
+## Installation
+
+You can install it via extension sidebar, search for `vscode-caniuse`. Or you can launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+
+```
+ext install vscode-caniuse
+```
+
 ## Features
 
  - Highlight any text and either execute `Can I Use` or use default keybinding `alt + i` to display compatibility in status bar.
