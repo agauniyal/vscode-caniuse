@@ -1,7 +1,12 @@
 # vscode-caniuse
 
-Instant & Offline check for HTML5, CSS3, SVG, JS API compatibility through [Can I Use](http://caniuse.com/).
+### Instant & Offline check for HTML5, CSS3, SVG, JS API compatibility through [Can I Use](http://caniuse.com/).
 
+> "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+
+![vscode-caniuse screenshot](screenshot.jpg)
+
+---------------
 ## Installation
 
 You can install it via extension sidebar, search for `vscode-caniuse`. Or you can launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
@@ -25,5 +30,4 @@ This extension contributes the following settings:
 
 ## TODO
 
-- [ ] Add screenshot/gif to README
 - [ ] Tests

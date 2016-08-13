@@ -2,7 +2,7 @@
     "name": "vscode-caniuse",
     "displayName": "vscode-caniuse",
     "description": "Browser support tables for modern web technologies - plugin for vscode",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "publisher": "agauniyal",
     "icon": "icon.svg",
     "galleryBanner": {
