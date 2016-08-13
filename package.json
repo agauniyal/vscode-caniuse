@@ -1,93 +1,97 @@
 {
-  "name": "vscode-caniuse",
-  "displayName": "vscode-caniuse",
-  "description": "Browser support tables for modern web technologies - plugin for vscode",
-  "version": "0.0.1",
-  "publisher": "agauniyal",
-  "bugs": {
-    "url": "https://github.com/agauniyal/vscode-caniuse/issues",
-    "email": "agauniyal@outlook.com"
-  },
-  "homepage": "https://github.com/agauniyal/vscode-caniuse/blob/master/README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/agauniyal/vscode-caniuse.git"
-  },
-  "engines": {
-    "vscode": "^1.0.0"
-  },
-  "license": "SEE LICENSE IN LICENSE",
-  "categories": [
-    "Other",
-    "Languages",
-    "Productivity"
-  ],
-  "keywords": [
-    "caniuse",
-    "can i use",
-    "css",
-    "web",
-    "html"
-  ],
-  "activationEvents": [
-    "onCommand:extension.caniuse",
-    "onCommand:extension.setBrowserScope",
-    "onLanguage:css",
-    "onLanguage:sass",
-    "onLanguage:less",
-    "onLanguage:html"
-  ],
-  "main": "./extension",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.caniuse",
-        "title": "Can I Use"
-      },
-      {
-        "command": "extension.setBrowserScope",
-        "title": "Set Browser Scope - Can I Use"
-      }
+    "name": "vscode-caniuse",
+    "displayName": "vscode-caniuse",
+    "description": "Browser support tables for modern web technologies - plugin for vscode",
+    "version": "0.0.2",
+    "publisher": "agauniyal",
+    "icon": "icon.svg",
+    "galleryBanner": {
+        "color": "#E23E57",
+        "theme": "dark"
+    },
+    "bugs": {
+        "url": "https://github.com/agauniyal/vscode-caniuse/issues",
+        "email": "agauniyal@outlook.com"
+    },
+    "homepage": "https://github.com/agauniyal/vscode-caniuse/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/agauniyal/vscode-caniuse.git"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "categories": [
+        "Other",
+        "Languages"
     ],
-    "keybindings": [
-      {
-        "command": "extension.caniuse",
-        "key": "alt+i",
-        "when": "editorHasSelection"
-      },
-      {
-        "command": "extension.setBrowserScope",
-        "key": "alt+b"
-      }
+    "keywords": [
+        "caniuse",
+        "can i use",
+        "css",
+        "web",
+        "html"
     ],
-    "configuration": {
-      "type": "object",
-      "title": "Can I Use configuration",
-      "properties": {
-        "caniuse.show_all": {
-          "type": "boolean",
-          "default": false,
-          "description": "Specifies visiblity of all browsers in status bar."
-        },
-        "caniuse.browser_scope": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "default": null,
-          "description": "Specifies the browser scope to use."
+    "activationEvents": [
+        "onCommand:extension.caniuse",
+        "onCommand:extension.setBrowserScope",
+        "onLanguage:css",
+        "onLanguage:sass",
+        "onLanguage:less",
+        "onLanguage:html"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.caniuse",
+                "title": "Can I Use"
+            },
+            {
+                "command": "extension.setBrowserScope",
+                "title": "Set Browser Scope - Can I Use"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.caniuse",
+                "key": "alt+i",
+                "when": "editorHasSelection"
+            },
+            {
+                "command": "extension.setBrowserScope",
+                "key": "alt+b"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Can I Use configuration",
+            "properties": {
+                "caniuse.show_all": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Specifies visiblity of all browsers in status bar."
+                },
+                "caniuse.browser_scope": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Specifies the browser scope to use."
+                }
+            }
         }
-      }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    },
+    "dependencies": {
+        "caniuse-api": "^1.5.1",
+        "opn": "^4.0.2"
     }
-  },
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
-  "devDependencies": {
-    "vscode": "^0.11.0"
-  },
-  "dependencies": {
-    "caniuse-api": "^1.5.1",
-    "opn": "^4.0.2"
-  }
 }
