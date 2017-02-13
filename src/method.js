@@ -10,7 +10,6 @@ function getSelectedText() {
 
 
 function setBrowserScope() {
-
   vscode.window.showInputBox().then(userInput => {
     if (userInput === undefined) {
       return;
@@ -30,7 +29,6 @@ function setBrowserScope() {
 
 
 function caniuse() {
-
   const feature = getSelectedText();
   if (feature === '') { return ''; }
 
@@ -40,9 +38,9 @@ function caniuse() {
   } catch (e) {
     const suggestions = utils.provideMatches(feature);
     if (suggestions.length === 0) {
-      vscode.window.showErrorMessage(e.message);
+      vscode.window.showErrorMessage('Cannot find property in local database, you can still search through status bar.');
     } else {
-      // return promise based string
+      // returns promise based string
       return utils.pickSuggestions(suggestions);
     }
   }

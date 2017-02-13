@@ -1,13 +1,13 @@
 const vscode = require('vscode');
 const api = require('caniuse-api');
 
+
 function isEmptyObj(obj) {
   return Object.getOwnPropertyNames(obj).length === 0;
 }
 
 
 function nickname(name = '') {
-
   switch (name) {
     case 'firefox': return 'FF';
     case 'chrome' : return 'CR';

@@ -17,7 +17,7 @@ function activate(context) {
 
     const statusString = method.caniuse();
     Promise.resolve(statusString).then((string) => {
-      statusBarItem.text = string !== '' ? string : `$(search) Search in browser`;
+      statusBarItem.text = string !== '' ? string : `$(search) Unknown prop: search in browser`;
       statusBarItem.command = 'extension.browse';
       statusBarItem.tooltip = 'Click to search in caniuse website';
       statusBarItem.show();
