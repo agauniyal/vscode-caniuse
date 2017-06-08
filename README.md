@@ -1,5 +1,7 @@
 # vscode-caniuse
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/agauniyal/vscode-caniuse.svg)](https://greenkeeper.io/)
+
 ### Instant & Offline check for HTML5, CSS3, SVG, JS API compatibility through [Can I Use](http://caniuse.com/).
 
 > "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
