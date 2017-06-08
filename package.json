@@ -88,10 +88,10 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "vscode": "^0.11.0"
+        "vscode": "^1.1.0"
     },
     "dependencies": {
-        "caniuse-api": "^1.5.1",
-        "opn": "^4.0.2"
+        "caniuse-api": "^2.0.0",
+        "opn": "^5.0.0"
     }
 }
