@@ -1,4 +1,4 @@
-# vscode-caniuse
+# vscode-caniuse (UNMAINTAINED)
 
 ### Instant & Offline check for HTML5, CSS3, SVG, JS API compatibility through [Can I Use](http://caniuse.com/).
 
